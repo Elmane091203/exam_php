@@ -1,0 +1,20 @@
+windows+R=>cmd=>mysql -u root -p -h localhost
+1)Voir toutes les BD
+show databases;
+2)creer une bd
+create database nom_de_la_base;
+3)supprimer une bd
+drop database nom_de_la_base;
+4)selection d'une bd
+use nom_de_la_bd;
+5)afficher les tables d'une bd
+show tables;
+6)creation
+ create database db_hospital;
+se positionner au niveau de la bd
+use db_hospital;
+creer les tables
+ create table maladie(
+    -> idMaladie int not null auto_increment Primary key,
+    -> nomMaladie varchar(30) unique);
+ create table specialite(idSpecialite int not null auto_increment PRIMARY KEY, nomSpecialite varchar(30) unique);
